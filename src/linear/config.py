@@ -19,7 +19,7 @@ from dedalus_mcp.auth import Connection, SecretKeys
 
 
 linear = Connection(
-    name="linear-mcp",
+    name="linear",
     secrets=SecretKeys(token="LINEAR_ACCESS_TOKEN"),  # noqa: S106
     base_url="https://api.linear.app",
     auth_header_format="Bearer {api_key}",
