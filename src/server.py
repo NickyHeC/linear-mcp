@@ -30,7 +30,7 @@ def create_server() -> MCPServer:
     """
     as_url = os.getenv("DEDALUS_AS_URL", "https://as.dedaluslabs.ai")
     server = MCPServer(
-        name="linear",
+        name="linear-mcp",
         connections=[linear],
         http_security=TransportSecuritySettings(enable_dns_rebinding_protection=False),
         streamable_http_stateless=True,
